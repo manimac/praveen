@@ -1,0 +1,23 @@
+<style>
+    .active{
+        background: red;
+    }
+</style>
+<p>home works!</p>
+{{name}}
+<span [innerHtml]="name"></span>
+<div *ngIf="showDiv">
+    Ng If Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium molestias eligendi mollitia itaque pariatur. Eveniet officia velit aspernatur quidem maxime? Qui sequi quisquam illum in molestiae sapiente alias corporis maiores?
+</div>
+<div [hidden]="showDiv">
+   HIdden Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium molestias eligendi mollitia itaque pariatur. Eveniet officia velit aspernatur quidem maxime? Qui sequi quisquam illum in molestiae sapiente alias corporis maiores?
+</div>
+
+<div [ngClass]="{'active':showClass}">
+    Using ng CLassLorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum molestias dolorem repudiandae omnis qui a perferendis voluptatum mollitia impedit nulla, iste vitae nostrum vero incidunt provident reprehenderit velit natus facere.
+</div>
+
+<div [ngStyle]="styleProp">
+    Using ng style
+</div>
+<button (click)="save('test')">Save</button>
